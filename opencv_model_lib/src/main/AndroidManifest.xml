@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cv_lib.opencv_model_lib">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application>
+
+
+
+        <activity
+            android:theme="@style/AppTheme1"
+            android:name="photo.GuideActivity"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+
+        <activity  android:name="photo.firststart"
+            android:theme="@style/AppTheme1"/>
+        <activity android:name="camera.OpencvCameraActivity"
+            android:theme="@style/AppTheme1"/>
+        <activity android:name="photo.OpencvPhotoActivity"
+            android:theme="@style/AppTheme1">
+
+        </activity>
+
+
+    </application>
+
+</manifest>
